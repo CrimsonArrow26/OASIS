@@ -1,0 +1,50 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Default deny catch-all
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Helper functions
+    function isValidId(id) {
+      return id is string && id.size() > 0 && id.size() <= 64 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    // Connection testing endpoint
+    match /test/{testId} {
+      allow read, write: if true;
+    }
+
+    // Incidents collection
+    match /incidents/{incidentId} {
+      allow read: if true;
+      allow create, update: if isValidId(incidentId) &&
+        request.resource.data.name is string && request.resource.data.name.size() <= 128 &&
+        request.resource.data.lat is number &&
+        request.resource.data.lon is number &&
+        request.resource.data.severity is string;
+      allow delete: if false;
+    }
+
+    // Investigation dossiers and tactical dispatches
+    match /investigations/{investigationId} {
+      allow read: if true;
+      allow create, update: if isValidId(investigationId) &&
+        request.resource.data.incidentId is string && request.resource.data.incidentId.size() <= 64 &&
+        request.resource.data.status is string && request.resource.data.status.size() <= 32;
+      allow delete: if false;
+    }
+
+    // Saved historical replay date ranges and sessions
+    match /historicalReplays/{replayId} {
+      allow read: if true;
+      allow create, update: if isValidId(replayId) &&
+        request.resource.data.title is string && request.resource.data.title.size() <= 128 &&
+        request.resource.data.startDate is string &&
+        request.resource.data.endDate is string;
+      allow delete: if true;
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Maritime Sentinel",
+  "description": "NTRO Oil Spill Detection & Vessel Attribution System C2 Surveillance Workstation",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

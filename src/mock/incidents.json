@@ -1,0 +1,398 @@
+[
+  {
+    "id": "OSP-2024-0047",
+    "name": "Mississippi Canyon Sector 4 Slick",
+    "lat": 28.2367,
+    "lon": -89.3792,
+    "detectedAt": "2024-05-25T00:14:22Z",
+    "estimatedOriginAt": "2024-05-24T21:18:00Z",
+    "severity": "critical",
+    "confidenceScore": 0.946,
+    "areaKm2": 4.82,
+    "sarImageUrl": "/mock-sar/OSP-2024-0047.png",
+    "status": "active",
+    "oilType": "HEAVY FUEL/CRUDE",
+    "geometry": {
+      "lengthKm": 6.4,
+      "widthKm": 1.1,
+      "orientationDeg": 68,
+      "perimeterKm": 14.8,
+      "polygonGeoJSON": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-89.412, 28.225],
+            [-89.385, 28.242],
+            [-89.345, 28.258],
+            [-89.330, 28.252],
+            [-89.362, 28.231],
+            [-89.398, 28.218],
+            [-89.412, 28.225]
+          ]
+        ]
+      }
+    },
+    "drift": {
+      "originLat": 28.2011,
+      "originLon": -89.4217,
+      "originUncertaintyRadiusKm": 2.4,
+      "dischargeWindow": "2024-05-24 20:00 - 22:30 UTC",
+      "surfaceCurrentKts": 1.8,
+      "localWindKts": 12,
+      "dominantCurrentDir": 68,
+      "dominantWindDir": 45,
+      "estimatedAgeHours": 16,
+      "hindcastPath": [
+        [28.2367, -89.3792],
+        [28.2280, -89.3910],
+        [28.2160, -89.4050],
+        [28.2011, -89.4217]
+      ],
+      "forecastPath": [
+        [28.2367, -89.3792],
+        [28.2490, -89.3610],
+        [28.2610, -89.3420],
+        [28.2750, -89.3200]
+      ],
+      "forecastUncertaintyCone": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-89.3792, 28.2367],
+            [-89.3100, 28.2950],
+            [-89.3350, 28.2500],
+            [-89.3792, 28.2367]
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "id": "OSP-2024-0046",
+    "name": "South Pass Outflow Slick",
+    "lat": 29.0383,
+    "lon": -88.7528,
+    "detectedAt": "2024-05-24T19:22:00Z",
+    "estimatedOriginAt": "2024-05-24T10:00:00Z",
+    "severity": "high",
+    "confidenceScore": 0.812,
+    "areaKm2": 2.65,
+    "sarImageUrl": "/mock-sar/OSP-2024-0046.png",
+    "status": "active",
+    "oilType": "MEDIUM FUEL OIL",
+    "geometry": {
+      "lengthKm": 4.1,
+      "widthKm": 0.8,
+      "orientationDeg": 112,
+      "perimeterKm": 9.4,
+      "polygonGeoJSON": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-88.77, 29.04],
+            [-88.74, 29.03],
+            [-88.73, 29.02],
+            [-88.76, 29.03],
+            [-88.77, 29.04]
+          ]
+        ]
+      }
+    },
+    "drift": {
+      "originLat": 29.055,
+      "originLon": -88.785,
+      "originUncertaintyRadiusKm": 3.1,
+      "dischargeWindow": "2024-05-24 08:30 - 11:00 UTC",
+      "surfaceCurrentKts": 1.2,
+      "localWindKts": 14,
+      "dominantCurrentDir": 115,
+      "dominantWindDir": 90,
+      "estimatedAgeHours": 19,
+      "hindcastPath": [
+        [29.0383, -88.7528],
+        [29.045, -88.768],
+        [29.055, -88.785]
+      ],
+      "forecastPath": [
+        [29.0383, -88.7528],
+        [29.025, -88.735],
+        [29.015, -88.718]
+      ],
+      "forecastUncertaintyCone": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-88.7528, 29.0383],
+            [-88.69, 29.01],
+            [-88.71, 28.98],
+            [-88.7528, 29.0383]
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "id": "OSP-2024-0045",
+    "name": "Green Canyon Deepwater Slick",
+    "lat": 27.8153,
+    "lon": -90.1758,
+    "detectedAt": "2024-05-24T12:28:00Z",
+    "estimatedOriginAt": "2024-05-23T18:00:00Z",
+    "severity": "high",
+    "confidenceScore": 0.760,
+    "areaKm2": 3.40,
+    "sarImageUrl": "/mock-sar/OSP-2024-0045.png",
+    "status": "monitoring",
+    "oilType": "LIGHT CRUDE",
+    "geometry": {
+      "lengthKm": 5.2,
+      "widthKm": 1.0,
+      "orientationDeg": 48,
+      "perimeterKm": 12.1,
+      "polygonGeoJSON": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-90.19, 27.80],
+            [-90.16, 27.82],
+            [-90.15, 27.83],
+            [-90.18, 27.81],
+            [-90.19, 27.80]
+          ]
+        ]
+      }
+    },
+    "drift": {
+      "originLat": 27.792,
+      "originLon": -90.201,
+      "originUncertaintyRadiusKm": 4.0,
+      "dischargeWindow": "2024-05-23 16:00 - 20:00 UTC",
+      "surfaceCurrentKts": 1.5,
+      "localWindKts": 10,
+      "dominantCurrentDir": 48,
+      "dominantWindDir": 35,
+      "estimatedAgeHours": 26,
+      "hindcastPath": [
+        [27.8153, -90.1758],
+        [27.805, -90.188],
+        [27.792, -90.201]
+      ],
+      "forecastPath": [
+        [27.8153, -90.1758],
+        [27.832, -90.155],
+        [27.848, -90.138]
+      ],
+      "forecastUncertaintyCone": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-90.1758, 27.8153],
+            [-90.11, 27.86],
+            [-90.13, 27.82],
+            [-90.1758, 27.8153]
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "id": "OSP-2024-0042",
+    "name": "Main Pass Transit Slick",
+    "lat": 28.9172,
+    "lon": -89.0289,
+    "detectedAt": "2024-05-23T21:20:00Z",
+    "estimatedOriginAt": "2024-05-23T04:00:00Z",
+    "severity": "medium",
+    "confidenceScore": 0.620,
+    "areaKm2": 1.15,
+    "sarImageUrl": "/mock-sar/OSP-2024-0042.png",
+    "status": "resolved",
+    "oilType": "DIESEL / SHEEN",
+    "geometry": {
+      "lengthKm": 2.8,
+      "widthKm": 0.5,
+      "orientationDeg": 85,
+      "perimeterKm": 6.2,
+      "polygonGeoJSON": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-89.04, 28.91],
+            [-89.01, 28.92],
+            [-89.02, 28.93],
+            [-89.04, 28.91]
+          ]
+        ]
+      }
+    },
+    "drift": {
+      "originLat": 28.905,
+      "originLon": -89.055,
+      "originUncertaintyRadiusKm": 2.0,
+      "dischargeWindow": "2024-05-23 02:00 - 06:00 UTC",
+      "surfaceCurrentKts": 0.9,
+      "localWindKts": 8,
+      "dominantCurrentDir": 85,
+      "dominantWindDir": 95,
+      "estimatedAgeHours": 41,
+      "hindcastPath": [
+        [28.9172, -89.0289],
+        [28.911, -89.042],
+        [28.905, -89.055]
+      ],
+      "forecastPath": [
+        [28.9172, -89.0289],
+        [28.925, -89.012],
+        [28.932, -88.995]
+      ],
+      "forecastUncertaintyCone": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-89.0289, 28.9172],
+            [-88.98, 28.94],
+            [-88.99, 28.91],
+            [-89.0289, 28.9172]
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "id": "OSP-2024-0051",
+    "name": "Mumbai High Offshore Sector Slick (Arabian Sea)",
+    "lat": 19.3850,
+    "lon": 71.3520,
+    "detectedAt": "2024-05-25T03:14:00Z",
+    "estimatedOriginAt": "2024-05-24T22:30:00Z",
+    "severity": "critical",
+    "confidenceScore": 0.952,
+    "areaKm2": 5.74,
+    "sarImageUrl": "/mock-sar/OSP-2024-0051.png",
+    "status": "active",
+    "oilType": "BOMBAY HIGH CRUDE / HEAVY",
+    "geometry": {
+      "lengthKm": 7.2,
+      "widthKm": 1.2,
+      "orientationDeg": 315,
+      "perimeterKm": 16.4,
+      "polygonGeoJSON": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [71.318, 19.362],
+            [71.339, 19.378],
+            [71.372, 19.399],
+            [71.391, 19.412],
+            [71.382, 19.405],
+            [71.355, 19.375],
+            [71.328, 19.356],
+            [71.318, 19.362]
+          ]
+        ]
+      }
+    },
+    "drift": {
+      "originLat": 19.3480,
+      "originLon": 71.3120,
+      "originUncertaintyRadiusKm": 2.2,
+      "dischargeWindow": "2024-05-24 21:00 - 23:45 UTC",
+      "surfaceCurrentKts": 1.6,
+      "localWindKts": 15,
+      "dominantCurrentDir": 315,
+      "dominantWindDir": 290,
+      "estimatedAgeHours": 18,
+      "hindcastPath": [
+        [19.3850, 71.3520],
+        [19.3720, 71.3390],
+        [19.3600, 71.3250],
+        [19.3480, 71.3120]
+      ],
+      "forecastPath": [
+        [19.3850, 71.3520],
+        [19.3980, 71.3650],
+        [19.4120, 71.3800],
+        [19.4280, 71.3980]
+      ],
+      "forecastUncertaintyCone": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [71.3520, 19.3850],
+            [71.4300, 19.4300],
+            [71.3800, 19.4600],
+            [71.3520, 19.3850]
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "id": "OSP-2024-0052",
+    "name": "Bay of Bengal Coastal Sector Slick (Off Visakhapatnam)",
+    "lat": 17.5200,
+    "lon": 83.5800,
+    "detectedAt": "2024-05-24T22:45:00Z",
+    "estimatedOriginAt": "2024-05-24T16:15:00Z",
+    "severity": "high",
+    "confidenceScore": 0.915,
+    "areaKm2": 4.28,
+    "sarImageUrl": "/mock-sar/OSP-2024-0052.png",
+    "status": "active",
+    "oilType": "HEAVY FUEL OIL / SLUDGE",
+    "geometry": {
+      "lengthKm": 6.1,
+      "widthKm": 1.0,
+      "orientationDeg": 48,
+      "perimeterKm": 14.2,
+      "polygonGeoJSON": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [83.542, 17.495],
+            [83.568, 17.518],
+            [83.602, 17.538],
+            [83.625, 17.532],
+            [83.610, 17.510],
+            [83.575, 17.488],
+            [83.542, 17.495]
+          ]
+        ]
+      }
+    },
+    "drift": {
+      "originLat": 17.4650,
+      "originLon": 83.5150,
+      "originUncertaintyRadiusKm": 2.5,
+      "dischargeWindow": "2024-05-24 15:30 - 18:00 UTC",
+      "surfaceCurrentKts": 2.1,
+      "localWindKts": 14,
+      "dominantCurrentDir": 48,
+      "dominantWindDir": 220,
+      "estimatedAgeHours": 15,
+      "hindcastPath": [
+        [17.5200, 83.5800],
+        [17.5020, 83.5580],
+        [17.4850, 83.5350],
+        [17.4650, 83.5150]
+      ],
+      "forecastPath": [
+        [17.5200, 83.5800],
+        [17.5380, 83.6050],
+        [17.5550, 83.6320],
+        [17.5750, 83.6620]
+      ],
+      "forecastUncertaintyCone": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [83.5800, 17.5200],
+            [83.6700, 17.6100],
+            [83.6200, 17.6400],
+            [83.5800, 17.5200]
+          ]
+        ]
+      }
+    }
+  }
+]

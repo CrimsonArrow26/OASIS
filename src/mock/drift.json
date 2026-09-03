@@ -1,0 +1,98 @@
+{
+  "OSP-2024-0047": {
+    "incidentId": "OSP-2024-0047",
+    "model": "NOAA GNOME MODEL (v1.5.2)",
+    "originLat": 28.2011,
+    "originLon": -89.4217,
+    "originUncertaintyRadiusKm": 2.4,
+    "dischargeWindow": "2024-05-24 20:00 - 22:30 UTC",
+    "surfaceCurrent": {
+      "speedKts": 1.8,
+      "dirDeg": 68,
+      "cardinal": "ENE"
+    },
+    "localWind": {
+      "speedKts": 12,
+      "dirDeg": 45,
+      "cardinal": "NNE",
+      "gustsKts": 18
+    },
+    "hindcastPath": [
+      { "lat": 28.2367, "lon": -89.3792, "timestamp": "2024-05-25T00:14:00Z" },
+      { "lat": 28.2280, "lon": -89.3910, "timestamp": "2024-05-24T23:00:00Z" },
+      { "lat": 28.2160, "lon": -89.4050, "timestamp": "2024-05-24T22:00:00Z" },
+      { "lat": 28.2011, "lon": -89.4217, "timestamp": "2024-05-24T21:18:00Z" }
+    ],
+    "forecastPath": [
+      { "lat": 28.2367, "lon": -89.3792, "timestamp": "2024-05-25T00:14:00Z" },
+      { "lat": 28.2490, "lon": -89.3610, "timestamp": "2024-05-25T06:00:00Z" },
+      { "lat": 28.2610, "lon": -89.3420, "timestamp": "2024-05-25T12:00:00Z" },
+      { "lat": 28.2750, "lon": -89.3200, "timestamp": "2024-05-25T18:00:00Z" },
+      { "lat": 28.2910, "lon": -89.2950, "timestamp": "2024-05-26T00:00:00Z" }
+    ]
+  },
+  "OSP-2024-0051": {
+    "incidentId": "OSP-2024-0051",
+    "model": "INCOIS OOMPC / GNOME (v2.1)",
+    "originLat": 19.3480,
+    "originLon": 71.3120,
+    "originUncertaintyRadiusKm": 2.2,
+    "dischargeWindow": "2024-05-24 21:00 - 23:45 UTC",
+    "surfaceCurrent": {
+      "speedKts": 1.6,
+      "dirDeg": 315,
+      "cardinal": "NW"
+    },
+    "localWind": {
+      "speedKts": 15,
+      "dirDeg": 290,
+      "cardinal": "WNW",
+      "gustsKts": 21
+    },
+    "hindcastPath": [
+      { "lat": 19.3850, "lon": 71.3520, "timestamp": "2024-05-25T03:14:00Z" },
+      { "lat": 19.3720, "lon": 71.3390, "timestamp": "2024-05-25T01:30:00Z" },
+      { "lat": 19.3600, "lon": 71.3250, "timestamp": "2024-05-24T23:30:00Z" },
+      { "lat": 19.3480, "lon": 71.3120, "timestamp": "2024-05-24T22:30:00Z" }
+    ],
+    "forecastPath": [
+      { "lat": 19.3850, "lon": 71.3520, "timestamp": "2024-05-25T03:14:00Z" },
+      { "lat": 19.3980, "lon": 71.3650, "timestamp": "2024-05-25T09:00:00Z" },
+      { "lat": 19.4120, "lon": 71.3800, "timestamp": "2024-05-25T15:00:00Z" },
+      { "lat": 19.4280, "lon": 71.3980, "timestamp": "2024-05-25T21:00:00Z" },
+      { "lat": 19.4450, "lon": 71.4180, "timestamp": "2024-05-26T03:00:00Z" }
+    ]
+  },
+  "OSP-2024-0052": {
+    "incidentId": "OSP-2024-0052",
+    "model": "INCOIS OOMPC / GNOME (v2.1)",
+    "originLat": 17.4650,
+    "originLon": 83.5150,
+    "originUncertaintyRadiusKm": 2.5,
+    "dischargeWindow": "2024-05-24 15:30 - 18:00 UTC",
+    "surfaceCurrent": {
+      "speedKts": 2.1,
+      "dirDeg": 48,
+      "cardinal": "NE"
+    },
+    "localWind": {
+      "speedKts": 14,
+      "dirDeg": 220,
+      "cardinal": "SW",
+      "gustsKts": 18
+    },
+    "hindcastPath": [
+      { "lat": 17.5200, "lon": 83.5800, "timestamp": "2024-05-24T22:45:00Z" },
+      { "lat": 17.5020, "lon": 83.5580, "timestamp": "2024-05-24T20:30:00Z" },
+      { "lat": 17.4850, "lon": 83.5350, "timestamp": "2024-05-24T18:00:00Z" },
+      { "lat": 17.4650, "lon": 83.5150, "timestamp": "2024-05-24T16:15:00Z" }
+    ],
+    "forecastPath": [
+      { "lat": 17.5200, "lon": 83.5800, "timestamp": "2024-05-24T22:45:00Z" },
+      { "lat": 17.5380, "lon": 83.6050, "timestamp": "2024-05-25T04:00:00Z" },
+      { "lat": 17.5550, "lon": 83.6320, "timestamp": "2024-05-25T10:00:00Z" },
+      { "lat": 17.5750, "lon": 83.6620, "timestamp": "2024-05-25T16:00:00Z" },
+      { "lat": 17.5950, "lon": 83.6950, "timestamp": "2024-05-25T22:00:00Z" }
+    ]
+  }
+}

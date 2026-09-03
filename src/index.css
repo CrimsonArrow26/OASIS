@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+:root {
+  --bg-base: #0A0C0F;
+  --bg-surface: #0F1318;
+  --bg-raised: #141A22;
+  --bg-card: rgba(255, 255, 255, 0.04);
+  --bg-card-hover: rgba(255, 255, 255, 0.08);
+  --bg-selected: rgba(0, 255, 135, 0.08);
+
+  --border-subtle: rgba(255, 255, 255, 0.1);
+  --border-subtler: rgba(255, 255, 255, 0.06);
+
+  --text-primary: #C8D6E0;
+  --text-secondary: #94A3B8;
+  --text-muted: #6B8499;
+  --text-accent: #00FF87;
+  --text-warning: #FFB347;
+  --text-danger: #FF3B3B;
+
+  --font-ui: 'Space Grotesk', sans-serif;
+  --font-data: 'JetBrains Mono', monospace;
+}
+
+html.daylight, [data-theme="daylight"] {
+  --bg-base: #F1F5F9;
+  --bg-surface: #FFFFFF;
+  --bg-raised: #F8FAFC;
+  --bg-card: rgba(15, 23, 42, 0.03);
+  --bg-card-hover: rgba(15, 23, 42, 0.06);
+  --bg-selected: rgba(0, 160, 90, 0.09);
+
+  --border-subtle: rgba(15, 23, 42, 0.12);
+  --border-subtler: rgba(15, 23, 42, 0.06);
+
+  --text-primary: #0F172A;
+  --text-secondary: #334155;
+  --text-muted: #64748B;
+  --text-accent: #047857;
+  --text-warning: #D97706;
+  --text-danger: #DC2626;
+}
+
+/* Custom Bento Tactical Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(150, 150, 150, 0.25);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-accent);
+}
+
+/* Tactical Leaflet Map Overrides */
+.leaflet-container {
+  background-color: var(--bg-base) !important;
+  font-family: var(--font-data) !important;
+}
+
+.leaflet-container.leaflet-transparent {
+  background-color: transparent !important;
+  background: transparent !important;
+}
+
+.leaflet-container.leaflet-transparent .leaflet-tile-pane {
+  transition: opacity 0.25s ease;
+}
+
+.leaflet-ship-marker {
+  background: transparent !important;
+  border: none !important;
+}
+
+.leaflet-popup-content-wrapper {
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  border-radius: 6px !important;
+}
+
+.leaflet-popup-content {
+  margin: 0 !important;
+  line-height: 1.4 !important;
+}
+
+.leaflet-popup-tip-container {
+  display: none !important;
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.6);
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+@keyframes dash-animation {
+  to {
+    stroke-dashoffset: -20;
+  }
+}
+
+.animated-dashed-polygon {
+  animation: dash-animation 2s linear infinite;
+}

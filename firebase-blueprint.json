@@ -1,0 +1,69 @@
+{
+  "entities": {
+    "incident": {
+      "title": "Incident",
+      "description": "Marine oil spill incident record",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 64 },
+        "name": { "type": "string", "maxLength": 128 },
+        "lat": { "type": "number" },
+        "lon": { "type": "number" },
+        "detectedAt": { "type": "string", "maxLength": 64 },
+        "estimatedOriginAt": { "type": "string", "maxLength": 64 },
+        "severity": { "type": "string", "enum": ["critical", "high", "medium", "low"] },
+        "confidenceScore": { "type": "number" },
+        "areaKm2": { "type": "number" },
+        "status": { "type": "string", "enum": ["active", "resolved", "monitoring"] },
+        "oilType": { "type": "string", "maxLength": 64 }
+      },
+      "required": ["id", "name", "lat", "lon", "detectedAt", "severity", "status"]
+    },
+    "investigation": {
+      "title": "Investigation Dossier",
+      "description": "Evidence dossier and tactical command dispatch log",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 64 },
+        "incidentId": { "type": "string", "maxLength": 64 },
+        "suspectMmsi": { "type": "string", "maxLength": 32 },
+        "suspectName": { "type": "string", "maxLength": 128 },
+        "status": { "type": "string", "maxLength": 32 },
+        "dispatchedUnit": { "type": "string", "maxLength": 128 },
+        "notes": { "type": "string", "maxLength": 1000 },
+        "createdAt": { "type": "string", "maxLength": 64 }
+      },
+      "required": ["id", "incidentId", "status", "createdAt"]
+    },
+    "historicalReplay": {
+      "title": "Historical Replay Session",
+      "description": "Saved date range query and playback session for historical surveillance replay",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 64 },
+        "title": { "type": "string", "maxLength": 128 },
+        "startDate": { "type": "string", "maxLength": 64 },
+        "endDate": { "type": "string", "maxLength": 64 },
+        "cursorDate": { "type": "string", "maxLength": 64 },
+        "playbackSpeed": { "type": "number" },
+        "focusedIncidentId": { "type": "string", "maxLength": 64 },
+        "createdAt": { "type": "string", "maxLength": 64 }
+      },
+      "required": ["id", "title", "startDate", "endDate", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/incidents/{incidentId}": {
+      "schema": "incident",
+      "description": "Stores marine oil spill detection incidents"
+    },
+    "/investigations/{investigationId}": {
+      "schema": "investigation",
+      "description": "Stores USCG tactical dispatches and evidence dossiers"
+    },
+    "/historicalReplays/{replayId}": {
+      "schema": "historicalReplay",
+      "description": "Stores historical playback date ranges and simulation configurations"
+    }
+  }
+}
