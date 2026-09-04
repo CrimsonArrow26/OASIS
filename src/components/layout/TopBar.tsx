@@ -68,7 +68,7 @@ export const TopBar: React.FC = () => {
             <ShieldAlert className="w-3.5 h-3.5 text-[#FFB347]" />
           </div>
           <span className={`text-[13px] font-bold tracking-[0.08em] ${isLight ? 'text-slate-900' : 'text-[#C8D6E0]'}`}>
-            MARITIME SENTINEL
+            OASIS
           </span>
           <span className={`text-[10px] font-mono px-1 rounded ${isLight ? 'bg-slate-100 text-slate-600' : 'opacity-50 bg-white/5'}`}>
             v2.1
@@ -218,7 +218,7 @@ export const TopBar: React.FC = () => {
             }`}
           >
             <div className="flex items-center justify-between border-b border-white/10 pb-2.5">
-              <span className="font-bold text-[#00FF87] text-sm tracking-wide">MARITIME SENTINEL C2 DIAGNOSTICS</span>
+              <span className="font-bold text-[#00FF87] text-sm tracking-wide">OASIS C2 DIAGNOSTICS</span>
               <button
                 onClick={() => setShowConfigModal(false)}
                 className="text-[#6B8499] hover:text-white p-1 rounded"
