@@ -5,7 +5,7 @@
 
 ---
 
-## 📌 Overview
+## Overview
 
 **Maritime Sentinel** is an operational maritime domain awareness and intelligence platform designed to detect, track, and attribute marine oil spill incidents using Synthetic Aperture Radar (SAR) satellite imagery and Automatic Identification System (AIS) vessel tracking data.
 
@@ -13,38 +13,38 @@ The system correlates detected slick footprints with hydrodynamic drift models (
 
 ---
 
-## 🚀 Key Features
+## Key Features
 
-### 🛰️ Synthetic Aperture Radar (SAR) Analysis
+### Synthetic Aperture Radar (SAR) Analysis
 - **Satellite Ingestion**: Ingests Sentinel-1 C-Band SAR imagery (VV/VH dual-polarization).
 - **Slick Segmentation**: Detects low-backscatter oceanic anomalies indicative of mineral oil spills.
 - **Georeferenced Overlays**: Synchronized multi-layer raster visualization with boundary vectorization.
 
-### 🌊 Hydrodynamic Drift Modeling
+### Hydrodynamic Drift Modeling
 - **Backward Hindcasting**: Back-calculates slick drift vectors against surface currents and wind fields to estimate the precise time and coordinates of discharge.
 - **Forward Forecasting**: Projects slick dispersion pathways and uncertainty cones for environmental impact assessment.
 - **Metocean Fusion**: Integrates surface current velocity (knots) and local wind vector forces.
 
-### 🚢 AIS Vessel Tracking & Anomaly Detection
+### AIS Vessel Tracking & Anomaly Detection
 - **Trajectory Interpolation**: Evaluates historical vessel movements across spatiotemporal discharge windows.
 - **AIS Gap Detection**: Flags intentional transponder switch-offs ("dark vessel" activities) occurring near slick origins.
 - **Kinematic Analysis**: Measures vessel speed, course alteration, and proximity offsets relative to the estimated spill timeline.
 
-### 🎯 Multi-Factor Vessel Attribution Engine
+### Multi-Factor Vessel Attribution Engine
 Suspect rankings are computed using a multi-criteria scoring algorithm:
 - **Proximity Score**: Physical distance to the discharge centroid.
 - **Trajectory Alignment**: Intersect angle and alignment with the drift hindcast.
 - **AIS Gap Anomaly**: Temporal and spatial correlation with transponder blackouts.
 - **Vessel Type Prior**: Risk weighting based on vessel class (e.g., Crude Tankers, Chemical Carriers, Cargo).
 
-### 🗺️ Tactical C2 Geospatial Map Interface
+### Tactical C2 Geospatial Map Interface
 - **Interactive Layers**: Toggle between SAR raw tiles, segmented spill masks, drift vectors, uncertainty cones, and AIS tracks.
 - **Temporal Playback**: Time-slider scrub controls to visualize vessel movements relative to slick formation.
 - **Forensic Dossier**: One-click generation of audit-ready incident reports and evidence summaries.
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 - **Frontend**: React 18, TypeScript, Tailwind CSS, Lucide Icons, Leaflet / D3
 - **Backend**: Node.js, Express
@@ -53,7 +53,7 @@ Suspect rankings are computed using a multi-criteria scoring algorithm:
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 ├── public/
@@ -80,7 +80,7 @@ Suspect rankings are computed using a multi-criteria scoring algorithm:
 
 ---
 
-## ⚙️ Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -110,7 +110,7 @@ Open your browser at `http://localhost:3000` to access the C2 workstation.
 
 ---
 
-## 🏗️ Production Build & Deployment
+## Production Build & Deployment
 
 ### 1. Build the Application
 Compiles the Vite client assets and bundles the Node.js Express server into `dist/server.cjs`:
@@ -125,7 +125,7 @@ npm start
 
 ---
 
-## ☁️ Deployment Guide
+## Deployment Guide
 
 ### Deploying to Render / Web Services
 
@@ -144,6 +144,6 @@ npm start
 
 ---
 
-## 📄 License
+## License
 
 This project is released under the [MIT License](LICENSE).
