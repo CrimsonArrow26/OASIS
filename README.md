@@ -1,6 +1,6 @@
 # OASIS
 
-Oceanic AI- powered Spill Identification System
+**Oceanic AI - powered Spill Identification System**
 > **Autonomous Satellite SAR Oil Spill Detection & Vessel Attribution System**
 > Command & Control (C2) Maritime Surveillance Workstation
 
@@ -8,7 +8,7 @@ Oceanic AI- powered Spill Identification System
 
 ## Overview
 
-**Maritime Sentinel** is an operational maritime domain awareness and intelligence platform designed to detect, track, and attribute marine oil spill incidents using Synthetic Aperture Radar (SAR) satellite imagery and Automatic Identification System (AIS) vessel tracking data.
+**OASIS** is an operational maritime domain awareness and intelligence platform designed to detect, track, and attribute marine oil spill incidents using Synthetic Aperture Radar (SAR) satellite imagery and Automatic Identification System (AIS) vessel tracking data.
 
 The system correlates detected slick footprints with hydrodynamic drift models (hindcast & forecast) and historical vessel trajectories to pinpoint source discharge locations and assign weighted attribution scores to suspect vessels.
 
