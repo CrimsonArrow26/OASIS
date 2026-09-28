@@ -1,5 +1,6 @@
-# Maritime Sentinel
+# OASIS
 
+Oceanic AI- powered Spill Identification System
 > **Autonomous Satellite SAR Oil Spill Detection & Vessel Attribution System**
 > Command & Control (C2) Maritime Surveillance Workstation
 
